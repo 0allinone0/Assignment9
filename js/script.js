@@ -7,7 +7,7 @@ async function get_giphy(){
     const data = await response.json();
     const images = data.data.map(gif => gif.images.original.url);
     
-    
+    console.log(images); //preview
 }
 
 get_giphy()
